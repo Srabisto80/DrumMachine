@@ -1,0 +1,197 @@
+<!-- User Story #1: I should be able to see an outer container with a corresponding id="drum-machine" that contains all other elements. 
+    User Story #2: Within #drum-machine I can see an element with a corresponding id="display". 
+    User Story #3: Within #drum-machine I can see 9 clickable drum pad elements, each with a class name of drum-pad, a unique id that describes the audio clip the drum pad will be set up to trigger, and an inner text that corresponds to one of the following keys on the keyboard: Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order. 
+    User Story #4: Within each .drum-pad, there should be an HTML5 audio element which has a src attribute pointing to an audio clip, a class name of clip, and an id corresponding to the inner text of its parent .drum-pad (e.g. id="Q", id="W", id="E" etc.). 
+    User Story #5: When I click on a .drum-pad element, the audio clip contained in its child audio element should be triggered. 
+    User Story #6: When I press the trigger key associated with each .drum-pad, the audio clip contained in its child audio element should be triggered (e.g. pressing the Q key should trigger the drum pad which contains the string "Q", pressing the W key should trigger the drum pad which contains the string "W", etc.). 
+    User Story #7: When a .drum-pad is triggered, a string describing the associated audio clip is displayed as the inner text of the #display element (each string must be unique). Once you're done, submit the URL to your working project with all its tests passing. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drum Machine</title>
+        <link rel="stylesheet" href="../Master template for Bootstrap, Jquery, D3, and Ajax - with icons/reset.css">
+        <link rel="stylesheet" href="../Master template for Bootstrap, Jquery, D3, and Ajax - with icons/css/bootstrap.css">
+        <link rel="stylesheet" href="./drum.css">
+    </head>
+    <body>
+        
+        <div class="container container-fluid" id="drum-machine">
+            <h3>Welcome to the Rabisto's Drum Line!!!</h3>
+            <div id="display">
+                
+            </div>
+
+            <div id="drumLine">
+                    <button type="button" class="drum-pad" id="audioQ" onclick="Qplay()" onkeydown="myEvent(event)">Q
+                        <audio class="clip" id="Q" src="./audio/Q.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioW" onclick="Wplay()" onkeydown="myEvent(event)">W
+                        <audio class="clip" id="W" src="./audio/W.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioE" onclick="Eplay()" onkeydown="myEvent(event)">E
+                        <audio class="clip" id="E" src="./audio/E.mp3" type="audio/mpeg">
+                        </audio>
+
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioA" onclick="Aplay()" onkeydown="myEvent(event)">A
+                        <audio class="clip" id="A" src="./audio/A.mp3" type="audio/mpeg">
+                        </audio>
+
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioS" onclick="Splay()" onkeydown="myEvent(event)">S
+                        <audio class="clip" id="S" src="./audio/S.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioD" onclick="Dplay()" onkeydown="myEvent(event)">D
+                        <audio class="clip" id="D" src="./audio/D.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioZ" onclick="Zplay()" onkeydown="myEvent(event)">Z
+                        <audio class="clip" id="Z" src="./audio/Z.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioX" onclick="Xplay()" onkeydown="myEvent(event)">X
+                        <audio class="clip" id="X" src="./audio/X.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+
+                    <button type="button" class="drum-pad" id="audioC" onclick="Cplay()" onkeydown="myEvent(event)">C
+                        <audio class="clip" id="C" src="./audio/C.mp3" type="audio/mpeg">
+                        </audio>
+                    </button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="../Lots of Java/pcc-userstory-tests.js"></script>
+
+        <script type="text/javascript" src="../Master template for Bootstrap, Jquery, D3, and Ajax - with icons/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../Master template for Bootstrap, Jquery, D3, and Ajax - with icons/js/jquery.js"></script>
+        <script type="text/javascript" src="../pcc-userstory-tests.js"></script>
+        <script type="text/javascript" src="./drum.js"></script>
+     
+    </body>
+    </html>
